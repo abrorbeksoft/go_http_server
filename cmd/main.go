@@ -1,11 +1,15 @@
 package main
 
 import (
-	"github.com/abrorbeksoft/go_http_server/api"
+	"github.com/go_http_server/api"
+	"github.com/go_http_server/config"
 )
 
 func main() {
+
+	cfg := config.Load()
+
 	router := api.Main()
 
-	router.Run(":3000")
+	router.Run(cfg.HttpPort)
 }
