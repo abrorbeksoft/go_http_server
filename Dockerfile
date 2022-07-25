@@ -1,5 +1,5 @@
 # workspace (GOPATH) configured at /go
-FROM golang:1.16 as builder
+FROM golang:1.18 as builder
 
 
 #
